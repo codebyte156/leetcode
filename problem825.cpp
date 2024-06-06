@@ -9,14 +9,14 @@ public:
             ageCounts[age]++;
         }
         
-        int requests = 0;
-        for (const auto& [ageX, countX] : ageCounts) {
-            for (const auto& [ageY, countY] : ageCounts) {
-                if (isValidRequest(ageX, ageY)) {
-                    requests += countX * (countY - (ageX == ageY ? 1 : 0));
-                }
-            }
-        }
+        // int requests = 0;
+        // for (const auto& [ageX, countX] : ageCounts) {
+        //     for (const auto& [ageY, countY] : ageCounts) {
+        //         if (isValidRequest(ageX, ageY)) {
+        //             requests += countX * (countY - (ageX == ageY ? 1 : 0));
+        //         }
+        //     }
+        // }
         
         return requests;
     }
